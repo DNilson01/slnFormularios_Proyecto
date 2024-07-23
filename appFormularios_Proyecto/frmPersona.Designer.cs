@@ -38,14 +38,21 @@ namespace appFormularios_Proyecto
             this.lblDni = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.lblCorreo = new System.Windows.Forms.Label();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.lblContraseña = new System.Windows.Forms.Label();
-            this.txtNombreUsuario = new System.Windows.Forms.TextBox();
             this.lblNombreUsuario = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.lblTelefono = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboIdRol = new System.Windows.Forms.ComboBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.cboEstado = new System.Windows.Forms.ComboBox();
+            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.cboCampo = new System.Windows.Forms.ComboBox();
+            this.txtContenido = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl1
@@ -64,7 +71,7 @@ namespace appFormularios_Proyecto
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(22, 9);
+            this.label1.Location = new System.Drawing.Point(26, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 1;
@@ -73,14 +80,14 @@ namespace appFormularios_Proyecto
             // 
             // txtIdUsuario
             // 
-            this.txtIdUsuario.Location = new System.Drawing.Point(24, 25);
+            this.txtIdUsuario.Location = new System.Drawing.Point(28, 71);
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtIdUsuario.TabIndex = 4;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(24, 74);
+            this.txtNombre.Location = new System.Drawing.Point(28, 120);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 6;
@@ -89,7 +96,7 @@ namespace appFormularios_Proyecto
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.SystemColors.Window;
-            this.lblNombre.Location = new System.Drawing.Point(22, 58);
+            this.lblNombre.Location = new System.Drawing.Point(26, 104);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(44, 13);
             this.lblNombre.TabIndex = 5;
@@ -97,7 +104,7 @@ namespace appFormularios_Proyecto
             // 
             // txtDni
             // 
-            this.txtDni.Location = new System.Drawing.Point(22, 118);
+            this.txtDni.Location = new System.Drawing.Point(26, 164);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(100, 20);
             this.txtDni.TabIndex = 8;
@@ -106,7 +113,7 @@ namespace appFormularios_Proyecto
             // 
             this.lblDni.AutoSize = true;
             this.lblDni.BackColor = System.Drawing.SystemColors.Window;
-            this.lblDni.Location = new System.Drawing.Point(20, 102);
+            this.lblDni.Location = new System.Drawing.Point(24, 148);
             this.lblDni.Name = "lblDni";
             this.lblDni.Size = new System.Drawing.Size(26, 13);
             this.lblDni.TabIndex = 7;
@@ -114,7 +121,7 @@ namespace appFormularios_Proyecto
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(22, 175);
+            this.txtCorreo.Location = new System.Drawing.Point(26, 221);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(100, 20);
             this.txtCorreo.TabIndex = 10;
@@ -123,51 +130,27 @@ namespace appFormularios_Proyecto
             // 
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.BackColor = System.Drawing.SystemColors.Window;
-            this.lblCorreo.Location = new System.Drawing.Point(19, 159);
+            this.lblCorreo.Location = new System.Drawing.Point(23, 205);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(38, 13);
             this.lblCorreo.TabIndex = 9;
             this.lblCorreo.Text = "Correo";
             // 
-            // txtContraseña
-            // 
-            this.txtContraseña.Location = new System.Drawing.Point(24, 441);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(100, 20);
-            this.txtContraseña.TabIndex = 18;
-            // 
-            // lblContraseña
-            // 
-            this.lblContraseña.AutoSize = true;
-            this.lblContraseña.BackColor = System.Drawing.SystemColors.Window;
-            this.lblContraseña.Location = new System.Drawing.Point(23, 444);
-            this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(61, 13);
-            this.lblContraseña.TabIndex = 17;
-            this.lblContraseña.Text = "Contraseña";
-            // 
-            // txtNombreUsuario
-            // 
-            this.txtNombreUsuario.Location = new System.Drawing.Point(20, 343);
-            this.txtNombreUsuario.Name = "txtNombreUsuario";
-            this.txtNombreUsuario.Size = new System.Drawing.Size(100, 20);
-            this.txtNombreUsuario.TabIndex = 16;
-            // 
             // lblNombreUsuario
             // 
             this.lblNombreUsuario.AutoSize = true;
             this.lblNombreUsuario.BackColor = System.Drawing.SystemColors.Window;
-            this.lblNombreUsuario.Location = new System.Drawing.Point(19, 318);
+            this.lblNombreUsuario.Location = new System.Drawing.Point(23, 364);
             this.lblNombreUsuario.Name = "lblNombreUsuario";
-            this.lblNombreUsuario.Size = new System.Drawing.Size(82, 13);
+            this.lblNombreUsuario.Size = new System.Drawing.Size(40, 13);
             this.lblNombreUsuario.TabIndex = 15;
-            this.lblNombreUsuario.Text = "Nro Documento";
+            this.lblNombreUsuario.Text = "Estado";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.Window;
-            this.label7.Location = new System.Drawing.Point(19, 265);
+            this.label7.Location = new System.Drawing.Point(23, 311);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 13);
             this.label7.TabIndex = 13;
@@ -175,7 +158,7 @@ namespace appFormularios_Proyecto
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(20, 228);
+            this.txtTelefono.Location = new System.Drawing.Point(24, 274);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(100, 20);
             this.txtTelefono.TabIndex = 12;
@@ -184,30 +167,114 @@ namespace appFormularios_Proyecto
             // 
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.BackColor = System.Drawing.SystemColors.Window;
-            this.lblTelefono.Location = new System.Drawing.Point(17, 212);
+            this.lblTelefono.Location = new System.Drawing.Point(21, 258);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(49, 13);
             this.lblTelefono.TabIndex = 11;
             this.lblTelefono.Text = "Telefono";
             // 
-            // comboBox1
+            // cboIdRol
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(20, 281);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 19;
+            this.cboIdRol.FormattingEnabled = true;
+            this.cboIdRol.Location = new System.Drawing.Point(24, 327);
+            this.cboIdRol.Name = "cboIdRol";
+            this.cboIdRol.Size = new System.Drawing.Size(121, 21);
+            this.cboIdRol.TabIndex = 19;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(24, 426);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(102, 23);
+            this.btnGuardar.TabIndex = 20;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(24, 455);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(102, 23);
+            this.btnEditar.TabIndex = 21;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(24, 484);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(102, 23);
+            this.btnEliminar.TabIndex = 22;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            // 
+            // cboEstado
+            // 
+            this.cboEstado.FormattingEnabled = true;
+            this.cboEstado.Location = new System.Drawing.Point(24, 399);
+            this.cboEstado.Name = "cboEstado";
+            this.cboEstado.Size = new System.Drawing.Size(121, 21);
+            this.cboEstado.TabIndex = 23;
+            // 
+            // dgvUsuarios
+            // 
+            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuarios.Location = new System.Drawing.Point(206, 71);
+            this.dgvUsuarios.Name = "dgvUsuarios";
+            this.dgvUsuarios.Size = new System.Drawing.Size(522, 436);
+            this.dgvUsuarios.TabIndex = 24;
+            // 
+            // cboCampo
+            // 
+            this.cboCampo.FormattingEnabled = true;
+            this.cboCampo.Location = new System.Drawing.Point(328, 22);
+            this.cboCampo.Name = "cboCampo";
+            this.cboCampo.Size = new System.Drawing.Size(121, 21);
+            this.cboCampo.TabIndex = 25;
+            // 
+            // txtContenido
+            // 
+            this.txtContenido.Location = new System.Drawing.Point(586, 22);
+            this.txtContenido.Name = "txtContenido";
+            this.txtContenido.Size = new System.Drawing.Size(100, 20);
+            this.txtContenido.TabIndex = 26;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Window;
+            this.label2.Location = new System.Drawing.Point(515, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Contenido";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.Window;
+            this.label3.Location = new System.Drawing.Point(254, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Campo";
             // 
             // frmPersona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(706, 519);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.txtContraseña);
-            this.Controls.Add(this.lblContraseña);
-            this.Controls.Add(this.txtNombreUsuario);
+            this.ClientSize = new System.Drawing.Size(740, 519);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtContenido);
+            this.Controls.Add(this.cboCampo);
+            this.Controls.Add(this.dgvUsuarios);
+            this.Controls.Add(this.cboEstado);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.cboIdRol);
             this.Controls.Add(this.lblNombreUsuario);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtTelefono);
@@ -223,6 +290,7 @@ namespace appFormularios_Proyecto
             this.Controls.Add(this.lbl1);
             this.Name = "frmPersona";
             this.Text = "frmPersona";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,13 +307,19 @@ namespace appFormularios_Proyecto
         private System.Windows.Forms.Label lblDni;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label lblCorreo;
-        private System.Windows.Forms.TextBox txtContraseña;
-        private System.Windows.Forms.Label lblContraseña;
-        private System.Windows.Forms.TextBox txtNombreUsuario;
         private System.Windows.Forms.Label lblNombreUsuario;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label lblTelefono;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboIdRol;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.ComboBox cboEstado;
+        private System.Windows.Forms.DataGridView dgvUsuarios;
+        private System.Windows.Forms.ComboBox cboCampo;
+        private System.Windows.Forms.TextBox txtContenido;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
